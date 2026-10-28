@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Kuis Ruang Muda: lima domain, masing-masing sepuluh soal tentang Indonesia, digital, lingkungan, masa depan, dan komunitas." />
+  <title>Kuis 5 Domain — Ruang Muda</title>
+  <script>try{document.documentElement.dataset.theme=localStorage.getItem('ruangMudaTheme_v2')||'dark'}catch(e){}</script>
+  <link rel="stylesheet" href="../assets/style.css" />
+  <link rel="stylesheet" href="../assets/overrides.css" />
+</head>
+<body data-page="quiz" data-base="../">
+  <div id="site-header"></div>
+  <main>
+    <section class="page-hero"><div class="wrap page-hero-grid"><div><div class="crumb"><a href="../index.html">Beranda</a><span>/</span> Kuis Cepat</div><div class="eyebrow">Tantangan pengetahuan pemuda</div><h1 class="page-title">Kuis per Domain</h1><p class="lede">Pilih topik yang ingin kamu uji. Tiap domain punya sepuluh soal, penjelasan jawaban, dan progres tersendiri.</p></div><div class="page-hero-aside"><strong>5 domain · 50 soal</strong>10 soal per domain. Skor, progres, dan XP tersimpan di perangkat ini.</div></div></section>
+    <section class="content-section quiz-domain-section">
+      <div class="wrap domain-picker" id="domainPicker" aria-labelledby="domainPickerTitle">
+        <div class="domain-picker-heading"><div><div class="section-label">Pilih jalur tantangan</div><h2 class="section-title" id="domainPickerTitle">Satu domain, sepuluh soal.</h2><p class="section-intro">Selesaikan satu per satu atau lanjutkan kuis yang belum selesai.</p></div><div class="domain-total-badge"><strong>50</strong><span>SOAL<br />TOTAL</span></div></div>
+        <div class="domain-overview"><div><span>Progres semua domain</span><strong id="domainProgressText">0 dari 5 domain selesai</strong></div><div class="domain-overall-track" role="progressbar" aria-label="Progres domain kuis" aria-valuemin="0" aria-valuemax="5" aria-valuenow="0"><span id="domainProgressBar"></span></div></div>
+        <div class="domain-grid" id="domainGrid"></div>
+      </div>
+      <div class="wrap quiz-wrap" id="quizWrap" hidden>
+        <aside class="quiz-side-panel"><div class="section-label">Kuis domain</div><h2>Sepuluh soal. Satu langkah lebih paham.</h2><p>Jawaban benar memberi XP satu kali per soal. Skor terbaik dicatat khusus untuk domain ini.</p><div class="quiz-side-count"><span class="count-number" id="questionTotal">10</span><span>SOAL<br />PER DOMAIN</span></div><div class="quiz-level-widget"><div class="level-widget-top"><div><small>LEVEL SEKARANG</small><strong id="playerLevel">LEVEL 1</strong><span id="playerRank">Pemula</span></div><div class="level-orb"><span id="levelNumber">01</span></div></div><div class="level-xp-row"><strong id="playerXp">0 XP</strong><span id="nextLevelText">100 XP ke level berikutnya</span></div><div class="level-progress"><span id="levelBar"></span></div></div><div class="quiz-side-line"><span>5 DOMAIN</span><i></i><span>50 SOAL</span><i></i><span>XP TERSIMPAN</span></div></aside>
+        <div class="quiz-main"><div class="quiz-session-top"><button class="btn btn-outline" id="backToDomains" type="button"><span aria-hidden="true">←</span> Semua domain</button><span id="activeDomainName"></span></div><div class="quiz-shell" id="quizShell" aria-live="polite"><div class="quiz-top"><span id="questionCounter">Pertanyaan 1 / 10</span><span id="currentScore">0 benar</span></div><div class="quiz-progress"><span id="quizBar"></span></div><div class="quiz-category" id="questionCategory"></div><h2 class="quiz-question" id="questionText"></h2><div class="answer-list" id="answerList"></div><p class="quiz-feedback" id="feedback" aria-live="polite"></p><div class="quiz-controls"><small id="answerHint">Jawaban benar mendapat 10 XP, sekali per soal.</small><button class="btn" id="nextQuestion" type="button" disabled>Lanjut <span aria-hidden="true">→</span></button></div></div><div class="best-score"><span>Skor terbaik domain ini</span><strong id="savedScore">Belum ada</strong></div></div>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="../assets/app.js" defer></script><script src="../assets/quiz.js" defer></script>
+</body>
+</html>

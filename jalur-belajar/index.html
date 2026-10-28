@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Pilih dari 50 pelajaran Ruang Muda tentang Indonesia, literasi digital, lingkungan, masa depan, kesehatan, dan komunitas." />
+  <title>Jalur Belajar — Ruang Muda</title>
+  <script>try{document.documentElement.dataset.theme=localStorage.getItem('ruangMudaTheme_v2')||'dark'}catch(e){}</script>
+  <link rel="stylesheet" href="../assets/style.css" />
+  <link rel="stylesheet" href="../assets/overrides.css" />
+</head>
+<body data-page="learn" data-base="../">
+  <div id="site-header"></div>
+  <main>
+    <section class="page-hero"><div class="wrap page-hero-grid"><div><div class="crumb"><a href="../index.html">Beranda</a><span>/</span> Jalur Belajar</div><div class="eyebrow">Materi singkat, gagasan panjang</div><h1 class="page-title">Jalur Belajar</h1><p class="lede">Pilih dari 50 pelajaran tentang Indonesia, dunia digital, lingkungan, masa depan, dan hidup bareng komunitas.</p></div><div class="page-hero-aside"><strong>50 pelajaran · 5 jalur</strong>Topik praktis untuk mengenali sekitar, melatih diri, dan mulai mengambil aksi.</div></div></section>
+    <section class="content-section"><div class="wrap">
+      <div class="learning-progress"><div><strong>Progres belajarmu</strong><p id="learnProgressText">0 dari 50 materi selesai</p></div><div class="progress-side"><div style="display:flex;justify-content:space-between;font-size:10px;color:#d2dfd4"><span>Perjalanan belajarmu</span><strong id="learnPercent">0%</strong></div><div class="progress-track"><span id="learnProgressBar"></span></div></div></div>
+      <div class="lesson-tools"><label class="lesson-search"><span aria-hidden="true">⌕</span><input id="lessonSearch" type="search" placeholder="Cari topik, misalnya cek fakta..." aria-label="Cari materi belajar" /></label><span class="result-count" id="resultCount">Menampilkan 10 dari 50</span></div>
+      <div class="filter-row" role="group" aria-label="Filter jalur belajar"><button class="filter-chip active" data-filter="all">Semua · 50</button><button class="filter-chip" data-filter="indonesia">Indonesia · 10</button><button class="filter-chip" data-filter="digital">Cakap digital · 10</button><button class="filter-chip" data-filter="lingkungan">Lingkungan · 10</button><button class="filter-chip" data-filter="masa">Skill &amp; masa depan · 10</button><button class="filter-chip" data-filter="sehat">Sehat &amp; komunitas · 10</button></div>
+      <div class="lesson-grid" id="lessonGrid"></div><div class="lesson-empty" id="lessonEmpty" hidden>Topiknya belum ketemu. Coba kata pencarian lain.</div><div class="lesson-more-wrap"><button class="btn btn-outline" id="loadMore">Tampilkan 10 lagi <span aria-hidden="true">↓</span></button></div>
+    </div></section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="../assets/app.js" defer></script><script src="../assets/lessons-data.js" defer></script><script src="../assets/learn.js" defer></script>
+</body>
+</html>
